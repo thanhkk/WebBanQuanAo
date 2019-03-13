@@ -1,0 +1,226 @@
+/*login*/
+body#LoginForm{
+background: #003973;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#Login{
+   padding-top: 20px;
+}
+
+
+
+.main-div{
+    margin-top: 100px;
+    background-color: white;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-right: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #343434;
+
+}
+
+/*-----------------*/
+.header-left {
+    background: #085078;
+    height: 50px;
+    color: white;
+    /*text-align: center;*/
+    padding-top: 10px;
+
+}
+
+.header-right {
+    height: 50px;
+    background: #085070;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #85D8C5, #085070);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #85D8CE, #085070);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*text-align: right;*/
+    padding-top: 10px;
+    padding-right: 30px;
+    color: white;
+
+}
+
+.header-right a {
+    color: white;
+}
+
+.header-right a:hover,
+:focus {
+    text-decoration: none;
+    /*font-weight: bold;*/
+    color: #085078;
+}
+
+
+/*body*/
+.body-left {
+    background-color: #222d32;
+    color: white;
+       /* min-height: 576px;*/
+}
+.body-left.col-sm-2{
+    min-height: 576px;
+}
+
+
+.body-left .admin {
+    /*    height: 100px;
+    align-items: center;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.body-left .admin img {
+    width: 100%;
+}
+
+#menu-i {
+    height: 50px;
+    /*padding-right: 10px;*/
+}
+
+#menu-i a {
+    color: white;
+}
+
+#menu-i i {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#menu-i a:hover,
+:focus {
+    text-decoration: none;
+    /*font-weight: bold;*/
+    color: #085078;
+}
+
+
+.body-right {
+    background-color: #e5e5e5;
+    padding-bottom: 40px;
+}
+
+.tieude {
+    /*height: 70px;*/
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+}
+
+.thanhcong {
+   /* color: green;
+    font-weight: bold;*/
+}
+
+.thanhcong i {
+    padding-right: 5px;
+}
+
+.thatbai {
+   /* color: red;
+    font-weight: bold;*/
+}
+
+.thatbai i {
+    padding-right: 5px;
+}
+
+.edit {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+}
+
+.bang {
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.bang .table td {
+    vertical-align: middle;
+}
+
+.bang img {
+    width: 70px;
+    text-align: center;
+}
+
+/*dash*/
+
+
+
+.widget {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    /*padding-left: 10px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*margin-top: 20px;*/
+    margin-bottom: 10px;
+}
+
+.widget i {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*san pham*/
+
+#imgSP {
+/* 	display: none; */
+width: 200px;
+padding-bottom: 10px;
+/*padding-top: 10px;*/
+}
+
+ /*khach hang*/
+#tuychon #edit{
+    color: deepskyblue;
+}
+#tuychon #delete{
+    color: red;
+}
+
+/*footer*/
+
+.footer-copyright {
+    background-color: #eee;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-left: 20px;
+}
+

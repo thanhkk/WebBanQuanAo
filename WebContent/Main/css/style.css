@@ -1,0 +1,519 @@
+.header-top {
+    font-size: 15px;
+    height: 35px;
+    padding-top: 5px;
+    /*padding-bottom: 10px;*/
+    background-color: #168ea8;
+}
+
+.header-top a {
+    /* font-weight: 600; */
+    color: #ffff;
+    /* margin: auto; */
+}
+
+.header-top a:hover,
+focus {
+    /*font-size: 15px;*/
+    /* font-weight: bold; */
+    color: white;
+}
+
+.header-top .container {
+    /*border-bottom: 2px solid black;*/
+
+}
+
+.header-top-left {
+    /*background-color: gray;*/
+
+}
+
+.header-top-right {
+    /*background-color: green;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+/*--------------------------*/
+.header-mid {
+    background-color: #183544;
+    /*height: 170px;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-mid a {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header-mid-left {
+    /*background-color: black;*/
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-mid-left img {
+    width: 100%;
+}
+
+.header-mid-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*background-color: yellow;*/
+}
+
+.header-bot {
+    background-color: #183544;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    /*display: flex;*/
+    /* border-bottom-left-radius: 10px; */
+    /* border-bottom-right-radius: 10px; */
+}
+
+/*--------------------------*/
+.main-body {
+/*     background-color: #f5f5f5; */
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+/*Sider bar*/
+.main-body .vertical-menu {
+    /*width: 200px;*/
+    /* padding-top: 40px; */
+}
+
+.main-body .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.main-body .vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.main-body .vertical-menu a.active {
+    background-color: #0088ce;
+    color: white;
+}
+
+/*-------------------*/
+.product {
+    /* background-color: green; */
+    /*padding-top: 30px;*/
+    padding-bottom: 30px;
+}
+
+/* product */
+.sapxep {
+    /*position: absolute;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product-mid {
+    /* border-bottom: 1px solid black; */
+    /* border-top: 1px solid black; */
+    /*background-color:#eff0f5;*/
+}
+
+.product-mid a {
+    font-size: 20px;
+    /*color: pink;*/
+}
+
+.product-mid .items p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff1e2c;
+    text-transform: uppercase;
+}
+
+.product-mid .col-sm-3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+.product-mid .items {
+    /*width: 100%;*/
+    overflow: hidden;
+    height: 350px;
+    position: relative;
+    /* width: 175px; */
+    background-color: white;
+    /* box-shadow: 0 0 5px 1px #e3e3e3; */
+    /* border-radius: 5px; */
+}
+
+.items-img img {
+    /* background-color: red; */
+    /* border-top-right-radius: 5px; */
+    /* border-top-left-radius: 5px; */
+    width: 100%;
+    /* height: 185px; */
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.items-info {
+    background-color: white;
+    /* padding-top: 15px; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.items:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.items:hover {
+    /*box-shadow: 0 0 5px 1px #f7544a;*/
+
+    /*opacity: 0.7;*/
+    box-shadow: 0 0 2px 1px blue;
+    /*transition: all ease-in-out 0.5s;*/
+}
+
+/*--------------------------*/
+/*--------------------------*/
+body {
+    /*color: #333;*/
+    background-color: #eff0f5;
+}
+
+body a:hover,
+:focus {
+    text-decoration: none;
+    /*color: #FFA500;*/
+    color: #0088ce;
+}
+
+/*---------------------------*/
+
+/*Footer*/
+/*==========================*/
+a:focus {
+    outline: none !important;
+}
+
+footer {
+    background-color: #183544;
+}
+
+.rst-footer .container {
+    padding-top: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.rst-footer h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff5e00;
+}
+
+.col-link {
+    text-align: center;
+}
+
+.footer_info {
+    margin: 20px 0;
+}
+
+.footer_info a,
+.footer_info2 a {
+    font-size: 20px;
+    color: white;
+    padding: 0 7px;
+}
+
+.footer_info a:nth-child(1):hover {
+    color: #00577a;
+}
+
+.footer_info a:nth-child(2):hover {
+    color: #e31a03;
+}
+
+.footer_info a:nth-child(3):hover {
+    color: #ff589f;
+}
+
+.footer_info2 a {
+    font-size: 14px;
+}
+
+/*.footer_info2 a:hover{
+  color: #dd4b39;
+}*/
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+/*footer ul li a:hover{
+  color: #dd4b39;
+}*/
+footer h3 {
+    color: #ffc107;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer_info p {
+    width: 92%;
+    float: right;
+    /*font-family: "Poppins",sans-serif;*/
+    font-size: 14px;
+    color: #444444;
+    font-weight: 400;
+}
+
+.rst-copyright {
+    text-align: center;
+    /*position: relative;*/
+    /*margin: 0 auto;*/
+}
+
+.rst-copyright .container {
+    border-top: 1px solid black;
+}
+
+.rst-copyright-content p {
+    color: white;
+    text-align: center;
+    /*font-family: "Open Sans",sans-serif;*/
+    font-size: 13px;
+    /*margin: 0 auto;*/
+    /*padding: 18px 0 15.5px;*/
+    /*word-spacing: 1.8px;*/
+}
+
+/*chi tiet san pham*/
+.main-body .container {
+    /* padding-top: 40px; */
+    /* padding-bottom: 40px; */
+}
+
+.product-images {
+    /*background-color: blue;*/
+
+}
+
+.product-images img {
+    max-width: 100%;
+    border: 2px;
+}
+
+.basel-scroll-content input {
+    width: 70px;
+}
+
+.product_meta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sku_wrapper {
+    font-weight: bold;
+}
+
+.sku {
+    font-style: italic;
+}
+
+.textwidget img {
+    height: 80px;
+    width: 80px;
+}
+
+.saovang {
+    color: #ff7600;
+}
+
+/*dang nhap dang ky*/
+.dangnhap {
+    /*padding: 50px 50px 50px 50px;*/
+    /*margin-right: 100px;*/
+
+}
+
+.dangnhap form {
+    padding: 50px 50px 50px 50px;
+    background-color: #ebebeb;
+}
+
+.dangky {
+    /*padding: 50px 50px 50px 50px;*/
+    /*margin-left: 100px;*/
+
+}
+
+.dangky form {
+    padding: 50px 50px 50px 50px;
+    background-color: #ebebeb;
+}
+
+/*gio hang*/
+.giohang {
+    /*padding-bottom: 50px;*/
+    padding-top: 50px;
+    /*text-align: center;*/
+}
+
+.giohang input {
+    width: 70px;
+}
+
+.giohang img {
+    width: 70px;
+    text-align: center;
+}
+
+.giohang .table td,
+.giohang .table th {
+    /*text-align: center;*/
+    vertical-align: middle;
+}
+
+.thanhtoan {
+    padding-bottom: 50px;
+}
+
+.giohang #example {
+    text-align: center;
+}
+
+/*don hang*/
+
+.donhang{
+background-color: white;
+padding: 10px 10px 10px 10px;
+}
+
+.table-dh{
+    width: 100%;
+        margin-top: 20px;
+     border-bottom: 1px solid #dadada;
+}
+
+#dh-info{
+        width: 700px;
+}
+ #dahuy{
+       background-color: #ced4da;
+    border-radius: 10px 10px 10px 10px;
+  padding: 0px 10px 2px 10px;
+}
+ #danhan{
+       background-color: #28a745;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 10px 2px 10px;
+    color: white;
+}
+#danggiao{
+    background-color: #64c6ec;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px 10px 2px 10px;
+    color: white;
+}
+
+/*chi  tiet don hang*/
+.ct-donhang{
+        margin-top: 20px;
+    background-color: white;
+    padding: 0px 10px 10px 10px;
+}
+
+.table-ct{
+    width: 100%;
+}
+#ct-top{
+     border-bottom: 1px solid #dadada;
+}
+#ct-top{
+    /*font-size: 13px;*/
+    font-weight: 500;
+    height: 40px;
+}
+#ct-ngaymua{
+    color: #28a745;
+}
+#ct-img img{
+        width: 100px;
+    height: 100px;
+    margin: 10px 10px 10px 10px;
+}
+#ct-sanpham{
+     border-bottom: 1px solid #dadada;
+}
+.ct-diachi{
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+.ct-tongcong{
+    margin-top: 10px;
+        background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+.ct-tongcong2{
+        text-align: right;
+        margin: auto;
+}
+.tinhtoan{
+        margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #dadada;
+}
+/*---thongbao-------------*/
+.thongbao {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*background-color: green; */
+}
+
+/* .thanhcong {
+    background-color: red;
+    color: green;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.thatbai {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: red;
+    font-weight: bold;
+} */

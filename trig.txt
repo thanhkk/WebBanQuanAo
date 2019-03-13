@@ -1,0 +1,68 @@
+﻿C:\\Users\\thanhtv\\Desktop\\tmdt\\img\\sp\\s \(([1-9]|[1-4][0-9]|[5][0-1])\).jpg
+
+cập nhật tổng tiền sau thêm sửa xoá chi tiết hoá đơn:
+
+CREATE TRIGGER upTongTien ON tblChiTiet
+    AFTER INSERT,UPDATE, DELETE
+AS
+   BEGIN
+        UPDATE  dbo.tblDonHang
+        SET     TongTien = ( SELECT SUM(ThanhTien)
+                             FROM   dbo.tblChiTiet
+                             WHERE  dbo.tblDonHang.MaDonHang = dbo.tblChiTiet.MaDonHang
+                             GROUP BY MaDonHang
+                           );DELETE  dbo.tblDonHang
+        WHERE   maDonHang NOT IN ( SELECT   dbo.tblChiTiet.maDonHang
+                                   FROM     dbo.tblChiTiet )
+    END;
+
+--10 khách hàng mua nhiều sản phẩm nhất
+
+
+SELECT * FROM dbo.tblChiTiet
+
+
+
+--10 khách hàng mua nhiều tiền nhất
+
+
+
+--10 sản phầm có số lượng bán chạy nhất
+
+SELECT  *
+FROM    dbo.tblSanPham
+WHERE   maSanPham IN ( SELECT TOP 10
+                                maSanPham
+                       FROM     dbo.tblChiTiet
+                       GROUP BY dbo.tblChiTiet.maSanPham
+                       ORDER BY COUNT(soLuong) DESC )
+
+
+
+
+SELECT SUM(ct.soLuong*(sp.giaSanPham-sp.giaNhap)) AS lai,MONTH(ngayTao) AS thang, YEAR(ngayTao) AS nam
+FROM dbo.tblChiTiet ct, dbo.tblSanPham sp,dbo.tblDonHang dh
+WHERE ct.maSanPham=sp.maSanPham AND dh.trangThai=1
+GROUP BY MONTH(ngayTao) , YEAR(ngayTao)
+ORDER BY   YEAR(ngayTao), MONTH(ngayTao) 
+
+
+================================NU
+USE [CosmeticsNUTT]
+GO
+/****** Object:  Trigger [dbo].[upTongTien]    Script Date: 04/01/2019 9:31:52 CH ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER TRIGGER [dbo].[upTongTien] ON  [dbo].[ChiTietHoaDon]
+    AFTER INSERT,UPDATE, DELETE
+AS
+    BEGIN
+        UPDATE  dbo.HoaDon
+        SET     tongTien = ( SELECT SUM(thanhTien)
+                             FROM   dbo.ChiTietHoaDon
+                             WHERE  dbo.HoaDon.idHoaDon = dbo.ChiTietHoaDon.idHoaDon
+                             GROUP BY idHoaDon
+                           )
+    END;
